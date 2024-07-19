@@ -20,7 +20,7 @@ fi
 nvm install v20
 
 # Install global npm packages
-npm i -g yarn typescript tsx pm2 npm@latest
+npm i -g yarn typescript tsx pm2 npm@latest npm-check-updates
 
 # Update packages cache
 sudo apt-get update
