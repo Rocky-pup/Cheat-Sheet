@@ -23,22 +23,22 @@ nvm install v20
 npm i -g yarn typescript tsx pm2 npm@latest npm-check-updates
 
 # Update packages cache
-sudo apt-get update
+sudo apt-get update -y
 
 # Upgrade packages
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 
 # Install postgresql
-sudo apt install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib -y
 
 # Start psql without systemd cause it's coder docker env
 sudo service postgresql start
 
 # Install nano cause I like it
-sudo apt-get install nano
+sudo apt-get install nano -y
 
 # Install redis
-sudo apt-get install redis
+sudo apt-get install redis -y
 
 # Start redis
 sudo service redis-server start
