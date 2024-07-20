@@ -46,3 +46,6 @@ sudo service redis-server start
 # Setup one-time local database for testing 
 sudo -u postgres psql -c "CREATE USER alpha WITH LOGIN PASSWORD 'SomeSecureAlpha';"
 sudo -u postgres psql -c "CREATE DATABASE alpha OWNER alpha;" 
+
+# Restart terminal
+reset
