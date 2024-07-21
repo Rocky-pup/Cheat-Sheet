@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download and install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$(curl --silent "https://api.github.com/repos/nvm-sh/nvm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')/install.sh | bash
 
 # Export NVM_DIR environment variable
 export NVM_DIR="$HOME/.nvm"
