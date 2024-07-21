@@ -3,7 +3,7 @@
 #Ask github mail for github to display my avatar on commits
 read -p 'Github mail: ' mail
 
-#Set github mail for git
+#Set github email for git
 git config --global user.email $mail
 
 # Download and install nvm
