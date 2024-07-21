@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Ask github mail for github to display my avatar on commits
+read -p 'Github mail: ' mail
+
+#Set github mail for coder instance
+git config --global user.email $mail
+
 # Download and install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$(curl --silent "https://api.github.com/repos/nvm-sh/nvm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')/install.sh | bash
 
