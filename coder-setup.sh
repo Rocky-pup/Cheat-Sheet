@@ -48,4 +48,4 @@ sudo -u postgres psql -c "CREATE USER alpha WITH LOGIN PASSWORD 'SomeSecureAlpha
 sudo -u postgres psql -c "CREATE DATABASE alpha OWNER alpha;" 
 
 # Restart terminal
-reset
+tput reset && source ~/.profile
