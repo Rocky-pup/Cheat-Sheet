@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Update packages cache
+sudo apt-get update -y
+
+# Upgrade packages
+sudo apt-get upgrade -y
+
+# Install things
+sudo apt-get install git nano curl -y
+
 #Ask github mail for github to display my avatar on commits
 read -p 'Github mail: ' mail
 
@@ -27,15 +36,6 @@ nvm install v20
 
 # Install global npm packages
 npm i -g yarn typescript tsx pm2 npm@latest npm-check-updates
-
-# Update packages cache
-sudo apt-get update -y
-
-# Upgrade packages
-sudo apt-get upgrade -y
-
-# Install things
-sudo apt-get install nano curl -y
 
 # Restart terminal
 tput reset && source ~/.profile
