@@ -38,4 +38,4 @@ nvm install v20
 npm i -g yarn typescript tsx pm2 npm@latest npm-check-updates
 
 # Restart terminal
-exec bash --login
+sudo reboot
