@@ -7,7 +7,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Install things
-sudo apt-get install git nano curl -y
+sudo apt-get install git nano curl build-essential mingw-w64 -y
 
 #Install rust
 curl -o- https://sh.rustup.rs | bash -s -- -y -q
