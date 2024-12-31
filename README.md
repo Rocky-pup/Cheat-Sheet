@@ -17,3 +17,8 @@ Setup postgresql on linux with user and its password "test"
 ```
 apt-get update && apt-get install wget sudo && wget -qO- https://raw.githubusercontent.com/Rocky-pup/Cheat-Sheet/main/linux-postgresql-test.sh | bash
 ```
+
+Setup key-db (fork of redis) on linux with password "test"
+```
+apt-get update && apt-get install wget sudo && wget -qO- https://raw.githubusercontent.com/Rocky-pup/Cheat-Sheet/main/linux-keydb-setup.sh | bash
+```
