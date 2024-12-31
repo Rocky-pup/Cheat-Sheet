@@ -12,3 +12,8 @@ Setup linux container in docker for RUST
 ```
 apt-get update && apt-get install wget sudo && wget -qO- https://raw.githubusercontent.com/Rocky-pup/Cheat-Sheet/main/linux-rust-setup.sh | bash
 ```
+
+Setup postgresql on linux with user and its password "test"
+```
+apt-get update && apt-get install wget sudo && wget -qO- https://raw.githubusercontent.com/Rocky-pup/Cheat-Sheet/main/linux-postgresql-test.sh | bash
+```
