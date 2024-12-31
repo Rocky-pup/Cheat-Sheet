@@ -6,13 +6,13 @@ sudo apt-get update -y
 # Upgrade installed packages
 sudo apt-get upgrade -y
 
-# Install necessary prerequisites
-sudo apt-get install -y software-properties-common wget gnupg2
+# Add the KeyDB repository
+echo "deb https://download.keydb.dev/open-source-dist $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/keydb.list
 
-# Add KeyDB repository
-sudo add-apt-repository ppa:andreasschmidt/keydb-stable -y
+# Add the KeyDB GPG key
+sudo wget -O /etc/apt/trusted.gpg.d/keydb.gpg https://download.keydb.dev/open-source-dist/keyring.gpg
 
-# Update package cache again
+# Update package cache again to include KeyDB packages
 sudo apt-get update -y
 
 # Install KeyDB
