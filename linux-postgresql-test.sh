@@ -28,13 +28,10 @@ sudo systemctl enable postgresql
 # Set up user, database, and password
 sudo -u postgres psql <<EOF
 -- Create a new user
-CREATE USER test WITH PASSWORD 'test';
+CREATE USER test WITH LOGIN SUPERUSER PASSWORD 'test';
 
 -- Create a new database
-CREATE DATABASE test;
-
--- Grant privileges to the user on the database
-GRANT ALL PRIVILEGES ON DATABASE test TO test;
+CREATE DATABASE test OWNER test;
 EOF
 
 # Display completion message
